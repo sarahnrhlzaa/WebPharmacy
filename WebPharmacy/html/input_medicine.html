@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Medicine</title>
+    <link rel="stylesheet" type="text/css" href="../css/input_medicine.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="input_medicine">
+    <main id="content">
+    <section class="content-inputmdc">
+        <div class="container-headinmdc">
+            <header>Add Medicine Form</header>
+            <form action="#" class="form-inmdc">
+                <div class="inputmdc-box">
+                    <label for="medicine">Medicine Name</label>
+                    <input type="text" placeholder="Input medicine name" id="medicine">
+                </div>
+
+                <div class="inputmdc-box">
+                    <label for="company">Add Company</label>
+                    <input type="text" placeholder="Input company name" id="company">
+                </div>
+
+                <div class="column-inmdc">
+                    <div class="inputmdc-box">
+                        <label for="quantity">Quantity</label>
+                        <input type="number" placeholder="Input quantity medicine" id="quantity">
+                    </div>
+                    <div class="inputmdc-box">
+                        <label for="price">Price</label>
+                        <input type="number" placeholder="Input medicine price" id="price">
+                    </div>
+                </div>
+
+                <div class="inputmdc-box">
+                    <label for="expiry-date">Expired Date</label>
+                    <input type="date" id="expiry-date">
+                </div>
+
+                <button class="button-inmdc" type="submit" onclick="submitForm()">Submit</button>
+            </form>
+        </div>
+    </section>
+</main>
+
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction In</title>
+    <link rel="stylesheet" href="../css/transaction_in.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="transaction_in">
+
+    <main id="content">
+        <section class="content-trxin">
+            <div class="container-trxin">
+                <h3 class="sub-headtrxin">Transaction In</h3>
+        
+                <form class="form-trxin" action="">
+                    <div class="inputBox-trxin">
+                        <div class="input-trxin">
+                            <label>Medicine Name:</label>
+                            <input type="text" placeholder="Enter Medicine Name" class="" id="medicineName">
+                        </div>
+                        <div class="input-trxin">
+                            <label>Transaction Date:</label>
+                            <input type="date" class="" id="transactionDate">
+                        </div>
+                        <div class="input-trxin">
+                            <label>Quantity:</label>
+                            <input type="number" placeholder="Enter Quantity" class="" id="quantity">
+                        </div>
+                        <div class="input-trxin">
+                            <label>Company Name:</label>
+                            <input type="text" placeholder="Enter Company Name" class="" id="companyName">
+                        </div>
+                        <div class="input-trxin center-trxin">
+                            <label>Price Per Unit:</label>
+                            <input type="text" placeholder="Enter Price Per Unit" class="" id="price">
+                        </div>
+                    </div>
+                    <button class="button-trxin" type="submit" onclick="submitForm()">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

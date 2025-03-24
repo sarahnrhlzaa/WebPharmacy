@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Pharmacy Management</title>
+</head>
+<body class="layout">
+<div id="layout-template">
+    <header class="header-main">
+        <button class="btnsidebar-toggle" onclick="toggleSidebar()">
+            <img src="../assets/sidebar.png" alt="Menu" class="imgsidebar">
+        </button>
+        <h1 class="web-name">Pharmacy Management</h1>
+        <div class="header-right">
+            <input type="text" id="idsearchbar" class="search-bar" placeholder="Search....">
+            <img src="../assets/searchbar.png" class="imgsearchbar" onclick="toggleSearch()">
+            <div class="profile">
+                <img src="../assets/profile.png" alt="user" class="imgprofile">
+                <span id="username">Loading--</span>
+            </div>
+        </div>
+    </header>
+
+    <aside class="sidebar">
+        <ul class="menusidebar">
+            <li class="active">
+                <a href="home.html">
+                    <img src="../assets/home.png" alt="Home">
+                    <span class="menu-text">Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="input_medicine.html">
+                    <img src="../assets/addmdc.png" alt="Input Medicine">
+                    <span class="menu-text">Input Medicine</span>
+                </a>
+            </li>
+            <li>
+                <a href="stock_medicine.html">
+                    <img src="../assets/stockmdc.png" alt="Stock Medicine">
+                    <span class="menu-text">Stock Medicine</span>
+                </a>
+            </li>
+            <li class="dropdown-trxlist">
+                <a href="#">
+                    <img src="../assets/trx.png" alt="Transaction">
+                    <span class="menu-text">Transaction</span>
+                </a>
+                <ul class="submenu">
+                    <li>
+                        <a href="transaction_in.html">
+                            <img src="../assets/trxin.png" alt="Transaction In">
+                            <span class="menu-text">Transaction In</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="transaction_out.html">
+                            <img src="../assets/trxout.png" alt="Transaction Out">
+                            <span class="menu-text">Transaction Out</span>
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </aside>
+</div>
+    <main id="content">
+    </main>
+    <script src="../js/script.js"></script>
+</body>
+</html>

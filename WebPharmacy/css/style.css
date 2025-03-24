@@ -1,0 +1,250 @@
+.header-main {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #040c78;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    z-index: 1000;
+}
+
+.web-name {
+    font-size: 22px;
+    text-align: left;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 10px; 
+}
+
+.search-bar {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    margin-right: 5px;
+}
+
+.imgsearchbar {
+    width: 25px;
+    cursor: pointer;
+    margin-left: 3px;
+    border-radius: 30%;
+}
+
+.imgsearchbar:hover {
+    transition: 0.6s ease-in-out;
+    transform: rotate(360deg) scale(1.5);
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.profile:hover{
+    text-decoration: underline;
+    color: #eef3ad;
+}
+.imgprofile {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.imgprofile:hover{
+    transform: scale(1.2);
+}
+
+.sidebar {
+    width: 200px; 
+    background: #88b7fc;
+    height: 100vh;
+    padding-top: 75px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    transition: width 0.3s ease-in-out;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 10;
+}
+
+.menu-toggle {
+    position: fixed;
+    top: 10px; 
+    left: 10px; 
+    z-index: 1000;
+}
+
+.sidebar.collapsed { 
+    width: 70px;
+}
+
+.sidebar .menu-text {
+    display: inline;
+    transition: opacity 0.2s ease-in-out, visibility 0.2s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+    white-space: nowrap;
+}
+
+.sidebar.collapsed .menu-text {
+    display: none;
+    visibility: hidden;
+    transition-delay: 0s, 0.3s;
+}
+
+.imgsidebar{
+    width: 28px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: left;
+}
+
+.sidebar ul li a {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    padding: 12px 12px;
+}
+
+.sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+}
+
+.sidebar ul li a img {
+    width: 25px; 
+    height: 25px;
+    margin-right: 10px; 
+}
+
+.sidebar .dropdown-trxlist ul li {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar .dropdown-trxlist ul li a {
+    padding: 10px 12px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    min-height: 40px; 
+}
+
+.sidebar .dropdown-trxlist ul li a img {
+    width: 50px;
+    height: 25px;
+    object-fit: contain;
+    margin-right: 10px;
+}
+
+.sidebar.collapsed .dropdown-trxlist ul {
+    min-width: 70px;
+}
+
+.sidebar.collapsed .dropdown-trxlist ul li a {
+    justify-content: center; 
+    min-height: 40px; 
+}
+
+.sidebar.collapsed .dropdown-trxlist ul li a img {
+    margin-right: 0;
+}
+
+.menu-text {
+    font-size: 14px;
+}
+
+.sidebar.collapsed .menu-text {
+    display: none;
+}
+
+.sidebar.collapsed .main-content {
+    margin-left: 60px;
+}
+
+@media (max-width: 768px) {
+    .header-home {
+        height: 50px;
+    }
+
+    .web-name {
+        font-size: 18px;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .imgsearchbar {
+        width: 20px;
+    }
+
+    .sidebar {
+        width: 60px;
+    }
+
+    .sidebar a {
+        font-size: 14px;   
+    }
+
+    .menu-text {
+        visibility: hidden;
+        margin-left: 13px;
+    }
+
+    .content {
+        margin-left: 60px;
+    }
+
+    .sidebar ul li a img {
+        width: 25px;
+        height: auto;
+    }
+
+    .sidebar .dropdown-trxlist ul li a img {
+        max-width: 20px;
+        height: auto;
+    }
+
+    .sidebar.collapsed .menu-text {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .login-container {
+        width: 350px;
+    }
+} 
+
+html, body {
+    overflow-x: hidden;
+    max-width: 100vw;
+}
+
+* {
+    box-sizing: border-box;
+    max-width: 100%;
+}

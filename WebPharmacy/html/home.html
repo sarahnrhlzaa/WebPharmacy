@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../css/home.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
+</head>
+<body class="home-page">
+
+    <main id="content">
+        <section class="content-home">
+            <div class="swiper home-slider">
+                <div class="swiper-wrapper wrapper">
+                    
+                    <div class="swiper-slide">
+                        <h2>Welcome to Pharmacy Management</h2>
+                        <p>Manage medicines, stock, and transactions efficiently.</p>
+                        <img src="../assets/addmdc.png" alt="Input Medicine">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h2>Track Your Medicine Stock</h2>
+                        <p>Monitor and update stock levels in real-time.</p>
+                        <img src="../assets/stockmdc.png" alt="Stock Monitoring">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h2>Easy Transactions</h2>
+                        <p>Record and manage transactions quickly and securely.</p>
+                        <img src="../assets/trx.png" alt="Transaction Process">
+                    </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+
+            <div  class="home-dashboard">
+                <div class="dashboard-card card-medicine">
+                    <img src="../assets/addmdc.png" alt="Total Medicines">
+                    <h3>Total Medicines</h3>
+                    <p>8 Medicines</p>
+                </div>
+                <div class="dashboard-card card-stock">
+                    <img src="../assets/stockmdc.png" alt="Stock Alerts">
+                    <h3>Stock Alerts</h3>
+                    <p>Available Stock: 2.175 Items/8 Medicines</p>
+                </div>
+                <div class="dashboard-card card-transaction">
+                    <img src="../assets/trx.png" alt="Today's Transactions">
+                    <h3>Today's Transaction</h3>
+                    <p>35</p>
+                </div>
+                <div class="dashboard-card card-users">
+                    <img src="../assets/profile.png" alt="Users Online">
+                    <h3>Users Online</h3>
+                    <p>3</p>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                    <div class="chart-title">TRANSACTION OUT CHART</div>
+                    <div class="bar-chart" id="barChart"></div>
+            </div>
+
+            <div class="recent-transactions">
+                <h3>Recent Transactions</h3>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Transaction ID</th>
+                            <th>Type</th>
+                            <th>Medicine</th>
+                            <th>Qty</th>
+                            <th>Date</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>TRXOO1</td>
+                            <td>In</td>
+                            <td>Alpara</td>
+                            <td>50</td>
+                            <td>21-03-2025</td>
+                        </tr>
+                        <tr>
+                            <td>TRXOO2</td>
+                            <td>Out</td>
+                            <td>Diapet</td>
+                            <td>10</td>
+                            <td>21-03-2025</td>
+                        </tr>
+                        <tr>
+                            <td>TRXOO3</td>
+                            <td>In</td>
+                            <td>Tempra</td>
+                            <td>30</td>
+                            <td>21-03-2025</td>
+                        </tr>
+                        <tr>
+                            <td>TRXOO4</td>
+                            <td>In</td>
+                            <td>Promag</td>
+                            <td>75</td>
+                            <td>21-03-2025</td>
+                        </tr>
+                        <tr>
+                            <td>TRXOO5</td>
+                            <td>Out</td>
+                            <td>Rhinos</td>
+                            <td>17</td>
+                            <td>21-03-2025</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="../js/script.js"></script>
+               
+</body>
+</html>
